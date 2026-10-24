@@ -6,8 +6,13 @@
     "url": "https://github.com/amierlorenz"
   },
   "repository": "https://github.com/amierlorenz/skills",
-  "keywords": ["skills", "learning", "productivity"],
+  "keywords": [
+    "skills",
+    "learning",
+    "productivity"
+  ],
   "skills": [
     "./skills/productivity/learn"
-  ]
+  ],
+  "license": "MIT"
 }

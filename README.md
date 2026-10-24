@@ -24,3 +24,7 @@ The plugin follows the latest commit on `main`, so updating the marketplace pull
 ## Credits
 
 The layout of this repo follows [mattpocock/skills](https://github.com/mattpocock/skills).
+
+## License
+
+[MIT](LICENSE). `learn` is adapted from Matt Pocock's MIT-licensed `/teach` and keeps his [license](skills/productivity/learn/LICENSE).
