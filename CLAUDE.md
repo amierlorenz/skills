@@ -12,3 +12,10 @@ Claude Code skills by Amier Lorenz, published as a plugin marketplace.
 - PR title is a conventional commit (it becomes the squash commit on main).
   Body: what, why, how tested, open questions, `Closes #N`.
 - Review comments: fix what's clear, ask on the PR when ambiguous, reply to every thread.
+
+## Writing skills
+- Skill files are read on every run: keep a line only if the agent would act differently without it.
+- Keep: a one-clause reason where it prevents a regression ("Whisper drops ums, so detect with CrisperWhisper"),
+  numbers the agent acts on (thresholds, time estimates, limits), and checks it must run.
+- Leave out: how a change was tested, measurements as proof, dates, who decided, session stories.
+  They go in the commit or PR description, where git keeps them with the change.
