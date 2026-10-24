@@ -19,3 +19,4 @@ Claude Code skills by Amier Lorenz, published as a plugin marketplace.
   numbers the agent acts on (thresholds, time estimates, limits), and checks it must run.
 - Leave out: how a change was tested, measurements as proof, dates, who decided, session stories.
   They go in the commit or PR description, where git keeps them with the change.
+- Every change to a skill names its source in the PR: the [Agent Skills spec](https://agentskills.io/specification.md) for format, the agentskills.io guides or [mattpocock/skills](https://github.com/mattpocock/skills) for writing, or a linked observed failure. No source: call it a proposal.
