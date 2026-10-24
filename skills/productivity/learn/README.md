@@ -39,13 +39,7 @@ A Claude Code skill that teaches you a topic over many sessions, with lessons th
 
 ## Install
 
-Clone this repo and link it into your Claude Code skills folder:
-
-```bash
-ln -s /path/to/learn-skill/learn ~/.claude/skills/learn
-```
-
-Then run `/learn <what you want to learn>`. The skill can only be started by you; Claude won't invoke it on its own.
+Install the plugin from this repo (see the [main README](../../../README.md#install)), then run `/amierlorenz-skills:learn <what you want to learn>`. The skill can only be started by you; Claude won't invoke it on its own.
 
 When you run `/learn` from a project folder, Claude Code may ask for permission to write to `~/Learning/`. To allow it permanently, add `~/Learning` to `permissions.additionalDirectories` in `~/.claude/settings.json`.
 
