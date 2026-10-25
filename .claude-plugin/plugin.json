@@ -11,8 +11,5 @@
     "learning",
     "productivity"
   ],
-  "skills": [
-    "./skills/productivity/learn"
-  ],
   "license": "MIT"
 }

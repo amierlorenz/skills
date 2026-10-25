@@ -11,7 +11,15 @@
       "source": "./",
       "description": "Amier's Claude Code skills for learning and getting work done.",
       "category": "productivity",
-      "keywords": ["skills", "learning", "productivity"]
+      "keywords": [
+        "skills",
+        "learning",
+        "productivity"
+      ],
+      "strict": false,
+      "skills": [
+        "./skills/productivity/learn"
+      ]
     }
   ]
 }
