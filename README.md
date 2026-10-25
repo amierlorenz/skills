@@ -21,10 +21,6 @@ The plugin follows the latest commit on `main`, so updating the marketplace pull
 
 - **[learn](skills/productivity/learn/)**: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics. A fork of Matt Pocock's [`/teach`](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach).
 
-## Credits
-
-The layout of this repo follows [mattpocock/skills](https://github.com/mattpocock/skills).
-
 ## License
 
-[MIT](LICENSE). `learn` is adapted from Matt Pocock's MIT-licensed `/teach` and keeps his [license](skills/productivity/learn/LICENSE).
+[MIT](LICENSE). `learn` keeps Matt Pocock's copyright and [MIT license](skills/productivity/learn/LICENSE).
