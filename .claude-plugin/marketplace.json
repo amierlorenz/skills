@@ -19,6 +19,20 @@
       "skills": [
         "./skills/productivity/learn"
       ]
+    },
+    {
+      "name": "git-workflow",
+      "source": {
+        "source": "github",
+        "repo": "amierlorenz/git-workflow"
+      },
+      "description": "Per-repo git workflow modes (hands-on or pr), enforced by a hook on every commit, push and PR.",
+      "category": "productivity",
+      "keywords": [
+        "git",
+        "workflow",
+        "hooks"
+      ]
     }
   ]
 }
