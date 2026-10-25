@@ -12,3 +12,11 @@ Claude Code skills by Amier ([amierlorenz](https://github.com/amierlorenz)), pub
 - PR title is a conventional commit (it becomes the squash commit on main).
   Body: what, why, how tested, open questions, `Closes #N`.
 - Review comments: fix what's clear, ask on the PR when ambiguous, reply to every thread.
+
+## Writing skills
+- Skill files are read on every run: keep a line only if the agent would act differently without it.
+- Keep: a one-clause reason where it prevents a regression ("Whisper drops ums, so detect with CrisperWhisper"),
+  numbers the agent acts on (thresholds, time estimates, limits), and checks it must run.
+- Leave out: how a change was tested, measurements as proof, dates, who decided, session stories.
+  They go in the commit or PR description, where git keeps them with the change.
+- Every change to a skill names its source in the PR: the [Anthropic skill building guide](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf), [Claude Platform Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview), [Agent Skills spec](https://agentskills.io/specification.md), the agentskills.io guides, or reputable skill repos like [mattpocock/skills](https://github.com/mattpocock/skills) for writing, or a linked observed failure. No source: call it a proposal.
