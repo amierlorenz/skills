@@ -38,7 +38,7 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 ## Plugins
 
-- **[git-workflow](plugins/git-workflow/README.md)**: a hands-on or pr git workflow per repo, enforced by a hook, with the mode shown under the prompt. Install on its own with `/plugin install git-workflow@amierlorenz`.
+- **[git-workflow](plugins/git-workflow/README.md)**: a hands-on or pr git workflow per repo, enforced by a hook. Install on its own with `/plugin install git-workflow@amierlorenz`.
 
 ## Developing
 
