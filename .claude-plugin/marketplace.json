@@ -1,0 +1,17 @@
+{
+  "name": "amierlorenz",
+  "owner": {
+    "name": "Amier",
+    "url": "https://github.com/amierlorenz"
+  },
+  "description": "Amier's Claude Code skills, as an installable plugin.",
+  "plugins": [
+    {
+      "name": "amierlorenz-skills",
+      "source": "./",
+      "description": "Amier's Claude Code skills for learning and getting work done.",
+      "category": "productivity",
+      "keywords": ["skills", "learning", "productivity"]
+    }
+  ]
+}

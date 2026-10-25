@@ -1,6 +1,6 @@
 # skills
 
-Claude Code skills by Amier Lorenz, published as a plugin marketplace.
+Claude Code skills by Amier ([amierlorenz](https://github.com/amierlorenz)), published as a plugin marketplace.
 
 ## Git workflow (pr mode)
 <!-- git-workflow:pr — checked by ~/.claude/hooks/git-workflow-guard.sh; keep this marker -->
