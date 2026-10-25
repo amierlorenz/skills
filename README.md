@@ -28,10 +28,21 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 ## Skills
 
+**User-invoked** skills run only when you type `/name`; **model-invoked** ones also load on their own when the task calls for them.
+
 ### Productivity
 
-- **[learn](skills/productivity/learn/)**: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics. A fork of Matt Pocock's [`/teach`](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach).
+#### User-invoked
+
+- **[learn](skills/productivity/learn/SKILL.md)**[^teach]: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics.
+
+## Developing
+
+`scripts/link-skills.sh` symlinks every skill here into `~/.claude/skills` and `~/.agents/skills`, so edits in this repo are live. Re-run it after adding, renaming or moving a skill. Uninstall the plugin first, or each skill loads twice.
 
 ## License
 
-[MIT](LICENSE). `learn` keeps Matt Pocock's copyright and [MIT license](skills/productivity/learn/LICENSE).
+[MIT](LICENSE)[^license].
+
+[^teach]: A fork of Matt Pocock's [`/teach`](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach).
+[^license]: `learn` keeps Matt Pocock's copyright and [MIT license](skills/productivity/learn/LICENSE).
