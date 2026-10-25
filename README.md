@@ -36,6 +36,10 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 - **[learn](skills/productivity/learn/SKILL.md)**[^teach]: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics.
 
+## Plugins
+
+- **[git-workflow](plugins/git-workflow/README.md)**: a hands-on or pr git workflow per repo, enforced by a hook, with the mode shown under the prompt. Install on its own with `/plugin install git-workflow@amierlorenz`.
+
 ## Developing
 
 `scripts/link-skills.sh` symlinks every skill here into `~/.claude/skills` and `~/.agents/skills`, so edits in this repo are live. Re-run it after adding, renaming or moving a skill. Uninstall the plugin first, or each skill loads twice.
