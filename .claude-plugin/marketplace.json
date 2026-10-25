@@ -16,7 +16,6 @@
         "learning",
         "productivity"
       ],
-      "strict": false,
       "skills": [
         "./skills/productivity/learn"
       ]
