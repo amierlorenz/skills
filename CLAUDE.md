@@ -20,7 +20,7 @@ Claude Code skills by Amier ([amierlorenz](https://github.com/amierlorenz)), pub
 - Leave out: how a change was tested, measurements as proof, dates, who decided, session stories.
   They go in the commit or PR description, where git keeps them with the change.
 - Every change to a skill names its source in the PR: the [Anthropic skill building guide](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf), [Claude Platform Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview), [Agent Skills spec](https://agentskills.io/specification.md), the agentskills.io guides, or reputable skill repos like [mattpocock/skills](https://github.com/mattpocock/skills) for writing, or a linked observed failure. No source: call it a proposal.
-- Length: `SKILL.md` ≤ 200 lines. Material only some runs need goes in `references/` (one level deep),
+- Length: `SKILL.md` under 500 lines and ~5k tokens (agentskills.io spec). Material only some runs need goes in `references/` (one level deep),
   behind a pointer that says when to read it.
 - Invocation: model-invoked only when a situation should trigger the skill without the user asking (an error,
   a hook, a file type); otherwise user-invoked (`disable-model-invocation: true`, and
