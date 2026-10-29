@@ -36,6 +36,12 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 - **[learn](skills/productivity/learn/SKILL.md)**[^teach]: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics.
 
+### Engineering
+
+#### User-invoked
+
+- **[pr-as-diff](skills/engineering/pr-as-diff/SKILL.md)**: sets up a GitHub PR in a worktree next to your checkout with all its commits as one unstaged diff, so you can read it in your editor.
+
 ## Plugins
 
 Plugins that live in their own repo and are listed in this marketplace.
