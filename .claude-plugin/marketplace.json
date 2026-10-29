@@ -17,7 +17,8 @@
         "productivity"
       ],
       "skills": [
-        "./skills/productivity/learn"
+        "./skills/productivity/learn",
+        "./skills/engineering/pr-as-diff"
       ]
     },
     {

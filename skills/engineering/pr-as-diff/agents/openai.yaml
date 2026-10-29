@@ -1,0 +1,5 @@
+interface:
+  display_name: "PR as Diff"
+  short_description: "Read a GitHub PR locally as one unstaged diff in a sibling worktree"
+policy:
+  allow_implicit_invocation: false
