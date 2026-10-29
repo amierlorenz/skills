@@ -1,0 +1,14 @@
+name: own-it
+on:
+  pull_request:
+    paths: ["plugins/own-it/**"]
+  push:
+    branches: [main]
+    paths: ["plugins/own-it/**"]
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git config --global user.name ci && git config --global user.email ci@example.com
+      - run: bash plugins/own-it/hooks/own-it-guard.test.sh
