@@ -41,6 +41,7 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 Plugins that live in their own repo and are listed in this marketplace.
 
 - **[git-workflow](https://github.com/amierlorenz/git-workflow)**: a hands-on or pr git workflow per repo, enforced by a hook. Install on its own with `/plugin install git-workflow@amierlorenz`.
+- **[own-it](https://github.com/amierlorenz/own-it)**: own every line of an AI-assisted change. You map, plan, predict and explain; Claude types exactly what you ask and tutors, enforced by hooks. Install on its own with `/plugin install own-it@amierlorenz`.
 
 ## Developing
 
