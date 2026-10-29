@@ -33,6 +33,17 @@
         "workflow",
         "hooks"
       ]
+    },
+    {
+      "name": "own-it",
+      "source": "./plugins/own-it",
+      "description": "Own every line of an AI-assisted change: you map, plan, predict and explain; Claude types exactly what you ask and tutors. Enforced by hooks.",
+      "category": "productivity",
+      "keywords": [
+        "learning",
+        "open-source",
+        "hooks"
+      ]
     }
   ]
 }
