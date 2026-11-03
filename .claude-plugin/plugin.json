@@ -11,5 +11,11 @@
     "learning",
     "productivity"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "learning-core",
+      "version": "^1.0.0"
+    }
+  ]
 }

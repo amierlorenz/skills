@@ -9,44 +9,17 @@ The user has asked you to teach them something. This is a stateful request - the
 
 ## Teaching Workspace
 
-Every teaching workspace lives in its own folder under `~/Learning/`, named with a dash-case topic slug (`~/Learning/electron-internals/`). Find or create the workspace as described in [Locating The Workspace](#locating-the-workspace). The state of their learning is captured in that folder in several files:
+Before anything else, load the `learning-workspace` skill (from the `learning-core` plugin). It says where workspaces live, how to find or create one, how to link a code project, and how to write `MISSION.md`, learning records, `~/Learning/LEARNER.md` and `~/Learning/TAGS.md`. Follow it: other learning skills read and write the same files.
 
-- `MISSION.md`: A document capturing the _reason_ the user is interested in the topic. This should be used to ground all teaching. Use the format in [MISSION-FORMAT.md](./MISSION-FORMAT.md).
+A teaching workspace is `~/Learning/<topic-slug>/` (`~/Learning/electron-internals/`). On top of the shared files, `learn` keeps:
+
+- `./lessons/*.html`: A directory of lessons. A **lesson** is a single, self-contained HTML output that teaches one tightly-scoped thing tied to the mission. This is the primary unit of teaching in this workspace.
 - `./reference/*.html`: A directory of reference materials. These are the compressed learnings from the lessons - cheat sheets, reference algorithms, syntax, yoga poses, glossaries. They are the raw units of learning. They should be beautiful documents which print out well, and are designed for quick reference.
 - `RESOURCES.md`: A list of resources which can be explored to ground your teaching in contextual knowledge, or to acquire knowledge and wisdom. Use the format in [RESOURCES-FORMAT.md](./RESOURCES-FORMAT.md).
-- `./learning-records/*.md`: A directory of learning records, which capture what the user has learned. These are loosely equivalent to architectural decision records in software development - they capture non-obvious lessons and key insights that may need to be revised later, or drive future sessions. These should be used to calculate the zone of proximal development. They are titled `0001-<dash-case-name>.md`, where the number increments each time. Use the format in [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md).
-- `./lessons/*.html`: A directory of lessons. A **lesson** is a single, self-contained HTML output that teaches one tightly-scoped thing tied to the mission. This is the primary unit of teaching in this workspace.
 - `./assets/*`: Reusable **components** shared across lessons. See [Assets](#assets).
 - `NOTES.md`: A scratchpad for you to jot down topic-specific preferences, or working notes.
-- `project`: Optional symlink to the code project this topic is about. See [Project Links](#project-links).
 
-Two files live at the root of `~/Learning/` and are shared by every workspace:
-
-- `~/Learning/LEARNER.md`: The **learner profile**. What the user has demonstrably learned in any workspace, their teaching preferences, cross-topic terms, and corrected misconceptions. Use the format in [LEARNER-FORMAT.md](./LEARNER-FORMAT.md). See [The Learner Profile](#the-learner-profile).
-- `~/Learning/TAGS.md`: The **tag registry**. The controlled vocabulary for tagging learning records. Use the format in [TAGS-FORMAT.md](./TAGS-FORMAT.md). See [Tags](#tags).
-
-Workspaces can be found by listing `~/Learning/*/MISSION.md`; there is no separate index. Links between files in `~/Learning/` are relative paths, so the whole folder can be moved, synced, or put under version control without breaking them.
-
-## Locating The Workspace
-
-At the start of every session, resolve the workspace from the current directory:
-
-1. **Inside `~/Learning/<topic>/`**: use that workspace.
-2. **In a folder containing a `.learning` symlink**: follow it to the workspace. Then check the workspace's `project` link; if it is missing, broken, or points elsewhere, re-point it at the current folder. The project has moved, and the current folder is its new location.
-3. **Anywhere else**: ask the user whether to start a new topic or attach to an existing one (list the existing `~/Learning/*/MISSION.md` titles). If the current folder is a code project the topic is about, offer to create the [project links](#project-links).
-
-Never create learning artifacts outside `~/Learning/`.
-
-## Project Links
-
-A topic about a specific code project gets two symlinks, so each side can reach the other:
-
-- `<project>/.learning` → `~/Learning/<topic>/`. This survives moving the project, because the workspace does not move. It is how a session started in the project finds its workspace.
-- `~/Learning/<topic>/project` → `<project>/`. A convenience link. It breaks when the project moves; that is harmless, and it is repaired the next time a session starts from the project (step 2 above).
-
-When creating `<project>/.learning` in a git repository, add `.learning` to `.git/info/exclude`, never to `.gitignore`. The link is personal and must not be committed.
-
-If a workspace's `project` link resolves but that project's `.learning` is missing or points elsewhere (for example after the topic folder was renamed), re-point `.learning` at the workspace. If a link cannot be repaired automatically, tell the user rather than guessing.
+Learning records are used to calculate the zone of proximal development.
 
 ## Philosophy
 
@@ -170,24 +143,3 @@ Glossaries, in particular, are an essential reference. Once one is created, it s
 The user will sometimes express preferences of how they want to be taught, or things you should keep in mind. This is the place to record those preferences, so you can refer back to them when designing lessons or working with the user.
 
 A preference that applies to every topic (pace, formats, things to avoid) belongs in the learner profile instead.
-
-## The Learner Profile
-
-`~/Learning/LEARNER.md` lets each workspace build on the others. Without it, every new topic starts from zero.
-
-- **Read it at the start of every session**, before choosing the next lesson. Create the file lazily, when the first entry is written.
-- **Promote, don't copy.** When you write a learning record that would matter outside this topic, add a one-line entry to the profile linking back to that record. The record keeps the evidence; the profile keeps the pointer.
-- **Same bar as learning records.** Only demonstrated understanding, stated prior knowledge, corrected misconceptions, and preferences qualify. Coverage is not learning.
-- **Use the dates for spacing.** When a lesson touches something the profile says was learned elsewhere, open with a short retrieval question on it. Interleave across topics, not just within one.
-- **Keep it small.** Revise entries in place, merge duplicates, and remove what is superseded. If it grows past about 150 lines, compress before adding more.
-- **Check with the user** before removing an entry they may still rely on.
-
-## Tags
-
-Tags let you find related learning across workspaces without reading every record.
-
-- **Tag every learning record** with 1-3 tags in its frontmatter, and give each learner profile entry the same tags.
-- **Use the registry.** Read `~/Learning/TAGS.md` before tagging. Use an existing tag if it fits, including when the word you had in mind is listed as one of its aliases. Add a new tag only when none fits, and give it a definition when you add it.
-- **Prefer broad tags.** `networking`, not `http-2-header-compression`. Detail belongs in the record.
-- **To find related learning**, read the registry, then search `~/Learning/*/learning-records/` for the matching tags and open only the records that match.
-- **Merge duplicates.** When the registry passes about 40 tags, or you notice two tags that mean the same thing, propose a merge to the user: keep one, rename the other in every record and profile entry, and list the old name as an alias.
