@@ -47,6 +47,33 @@
         "open-source",
         "hooks"
       ]
+    },
+    {
+      "name": "learning-core",
+      "source": {
+        "source": "github",
+        "repo": "amierlorenz/learning-core"
+      },
+      "description": "The shared ~/Learning/ workspace that learning plugins build on: layout, learner profile, tags and learning records.",
+      "category": "productivity",
+      "keywords": [
+        "learning",
+        "shared"
+      ]
+    },
+    {
+      "name": "training-wheels",
+      "source": {
+        "source": "github",
+        "repo": "amierlorenz/training-wheels"
+      },
+      "description": "Coach someone who has never coded through building their own first app, handing them more of the code level by level.",
+      "category": "productivity",
+      "keywords": [
+        "learning",
+        "beginners",
+        "first-app"
+      ]
     }
   ]
 }
