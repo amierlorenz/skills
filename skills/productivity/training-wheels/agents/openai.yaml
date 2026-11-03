@@ -1,0 +1,5 @@
+interface:
+  display_name: "Training Wheels"
+  short_description: "Build your first app, taking over more of the code level by level"
+policy:
+  allow_implicit_invocation: false

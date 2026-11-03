@@ -35,7 +35,7 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 #### User-invoked
 
 - **[learn](skills/productivity/learn/SKILL.md)**[^teach]: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics.
-- **[first-app](skills/productivity/first-app/SKILL.md)**: coaches someone who has never coded through building their own iOS app, starting with product decisions only and handing over more of the code, level by level.
+- **[training-wheels](skills/productivity/training-wheels/SKILL.md)**: coaches someone who has never coded through building their first app (iOS, web or a Python game), starting with product decisions only and peeling away one layer of abstraction per level.
 
 ## Plugins
 
