@@ -1,0 +1,5 @@
+interface:
+  display_name: "First App"
+  short_description: "Build your first iOS app, taking over more of the code level by level"
+policy:
+  allow_implicit_invocation: false
