@@ -38,6 +38,12 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 - **[learn](skills/productivity/learn/SKILL.md)**[^teach]: teaches you a topic over many sessions, with lessons that build on everything you've learned before, across topics.
 
+### Engineering
+
+#### User-invoked
+
+- **[ugly-app](skills/engineering/ugly-app/SKILL.md)**: builds an app idea end to end as a deliberately ugly app, every screen just raw data and buttons, so flows change cheaply before any design.
+
 ## Plugins
 
 Plugins that live in their own repo and are listed in this marketplace.
