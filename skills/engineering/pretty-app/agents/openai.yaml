@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pretty App"
+  short_description: "Design a working app through low-fi, mid-fi and hi-fi, with real variants"
+policy:
+  allow_implicit_invocation: false
