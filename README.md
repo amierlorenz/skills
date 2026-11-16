@@ -43,6 +43,7 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 #### User-invoked
 
 - **[ugly-app](skills/engineering/ugly-app/SKILL.md)**: builds an app idea end to end as a deliberately ugly app, every screen just raw data and buttons, so flows change cheaply before any design.
+- **[pretty-app](skills/engineering/pretty-app/SKILL.md)**[^prototype]: designs a working app through low-fi, mid-fi and hi-fi, comparing real variants on real data. Picks up where `ugly-app` leaves off.
 
 ## Plugins
 
@@ -66,4 +67,5 @@ Plugins that live in their own repo and are listed in this marketplace.
 [MIT](LICENSE)[^license].
 
 [^teach]: A fork of Matt Pocock's [`/teach`](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach).
+[^prototype]: Its variants are adapted from the UI branch of Matt Pocock's [`prototype`](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype).
 [^license]: `learn` keeps Matt Pocock's copyright and [MIT license](skills/productivity/learn/LICENSE).
