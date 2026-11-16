@@ -18,6 +18,7 @@
       ],
       "skills": [
         "./skills/productivity/learn",
+        "./skills/engineering/ugly-app",
         "./skills/engineering/pretty-app"
       ]
     },

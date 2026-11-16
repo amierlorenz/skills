@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ugly App"
+  short_description: "Build an app's whole flow first, with deliberately ugly screens"
+policy:
+  allow_implicit_invocation: false

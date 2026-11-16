@@ -42,6 +42,7 @@ Update with `npx skills@latest update` or `gh skill update`. Use one install met
 
 #### User-invoked
 
+- **[ugly-app](skills/engineering/ugly-app/SKILL.md)**: builds an app idea end to end as a deliberately ugly app, every screen just raw data and buttons, so flows change cheaply before any design.
 - **[pretty-app](skills/engineering/pretty-app/SKILL.md)**[^prototype]: designs a working app through low-fi, mid-fi and hi-fi, comparing real variants on real data. Picks up where `ugly-app` leaves off.
 
 ## Plugins
